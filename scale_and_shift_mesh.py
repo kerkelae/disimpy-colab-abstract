@@ -1,7 +1,7 @@
 import meshio
 import numpy as np
 
-mesh = meshio.read("original_mesh.ply")
+mesh = meshio.read("Cell_C_synth_LR.ply")
 shift = np.min(mesh.points, axis=0)
 
 with open("original_mesh.ply", "r") as f:
